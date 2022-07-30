@@ -1,0 +1,43 @@
+body{
+    background-color: orange;
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    color: #fff;
+    justify-content:center;
+    align-items: center;
+   
+}
+
+
+.mobile ,.tablet ,.PC{
+    justify-content: center;
+    margin: 8px;
+    font-size: 50px;
+    color: #fff;
+    display: none;
+}
+
+/* mobie : width <740px    */
+@media only screen and (max-width : 739px)  {
+   .mobile{
+       display: block;
+   }
+}
+ /* tablet : width >= 740px  and width < 1024px */
+@media only screen and ( min-width : 740px ) and (max-width : 1023px ){
+
+    .tablet{
+        display: block;
+    }
+}
+
+
+ /* pc : width > 1024 */
+
+ @media only screen and  (min-width : 1023px ){
+
+    .PC{
+        display: block;
+    }
+}
